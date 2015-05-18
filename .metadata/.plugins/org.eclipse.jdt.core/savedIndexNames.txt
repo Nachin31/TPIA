@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+F:\Nacho UTN\Inteligencia Artificial\Herramientas\IDEMIA\Eclipse-IDEM-IA-Galileo\GitHubRepository\.metadata\.plugins\org.eclipse.jdt.core
+898289412.index
+3792919871.index
+1681605053.index
+4146874359.index

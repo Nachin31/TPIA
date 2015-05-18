@@ -14,7 +14,11 @@ import javax.swing.JPanel;
 import excepciones.CoordenadasSinEsquinaException;
 import logica.Esquina;
 
-//Comentario extra para chequear versioando
+/**Esta clase maneja el panel que muestra el mapa
+ * 
+ * @author Nacho Gómez
+ *
+ */
 public class PanelMapa extends JPanel {
 	private static final long serialVersionUID = 3275005094743419907L;
 	private List<Esquina> esquinas;

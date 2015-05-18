@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idemia:AgentModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:idemia="utn.frsf.cidisi">
+  <Environment name="DroneEnvironment">
+    <EnvironmentState name="DroneEnvironmentState">
+      <DataStructure name="ciudad" type="Other"/>
+      <DataStructure name="locacionDrone" type="Other"/>
+    </EnvironmentState>
+  </Environment>
+  <Agent name="DroneAgent">
+    <Strategy xsi:type="idemia:Search"/>
+    <Goal name="AgentGoal" value="victimariosEncontrados == 1"/>
+    <AgentState name="DroneAgentState">
+      <DataStructure name="ciudad" type="Other"/>
+      <DataStructure name="energiaInicial"/>
+      <DataStructure name="energiaGastada"/>
+      <DataStructure name="locacion" type="Other"/>
+      <DataStructure name="direccionVictimario" type="Other"/>
+      <DataStructure name="victimariosEncontrados"/>
+    </AgentState>
+  </Agent>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="Subir" preConditions="nivelAgente != Alto &amp;&amp; energiaDisponible > costoSubir" postConditions="nivelAgente =  nivelAgente +1; locacion = locacion.getLocacionSubida(); energiaGastada = energiaGastada + costoSubir;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="Bajar" preConditions="nivelAgente != Bajo &amp;&amp; energiaDisponible > costoBajar" postConditions="nivelAgente =  nivelAgente - 1; locacion = locacion.getLocacionBajada(); energiaGastada = energiaGastada + costoBajar;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionN" preConditions="locacionActual.poseeLocacionNorte() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getNorte(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionE" preConditions="locacionActual.poseeLocacionEste() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getEste(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionS" preConditions="locacionActual.poseeLocacionSur() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getSur(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionO" preConditions="locacionActual.poseeLocacionOeste() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getOeste(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionNE" preConditions="locacionActual.poseeLocacionNoreste() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getNoreste(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionNO" preConditions="locacionActual.poseeLocacionNoroeste() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getNoroeste(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionSE" preConditions="locacionActual.poseeLocacionSureste() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getSureste(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="MoverLocacionSO" preConditions="locacionActual.poseeLocacionSuroeste() &amp;&amp; energiaDisponible > costoLocacionDestino;" postConditions="locacionActual = locacionActual.getSuroeste(); energiaGastada = energiaGastada + costoLocacionDestino;"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="IdentificarVictimario" preConditions="nivelAgente == Bajo &amp;&amp; locacionActual.hayVictimarios();" postConditions="vicitimariosEncontrados = victimariosEncontrados + 1;"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="gps" type="Other"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="antena" type="Other"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="camara" type="Other"/>
+</idemia:AgentModel>

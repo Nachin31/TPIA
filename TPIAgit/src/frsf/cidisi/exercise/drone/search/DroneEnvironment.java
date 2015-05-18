@@ -69,11 +69,8 @@ public class DroneEnvironment extends Environment {
 
         DroneEnvironmentState envState = this.getEnvironmentState();
         
-        int agentEnergy=1;
-        if(envState != null)
-        	agentEnergy = 10000 - envState.getEnergiaGastada();
+        int agentEnergy=agentEnergy = 10000 - envState.getEnergiaGastada();
 
-        // If the agent has no energy, he failed
         if (agentEnergy <= 0)
         	return true;
 

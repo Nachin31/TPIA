@@ -1,0 +1,51 @@
+<tree id="10" edgedefault="directed">
+<node Id="0" Action="null" Cost="0.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 1000
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="1" Action="IdentificarVictimario" Cost="-1.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 1000
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<edge source="0" target="1"/>
+</tree>

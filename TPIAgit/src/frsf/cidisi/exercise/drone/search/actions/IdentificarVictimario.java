@@ -37,9 +37,13 @@ public class IdentificarVictimario extends SearchAction {
         DroneEnvironmentState environmentState = (DroneEnvironmentState) est;
         DroneAgentState agState = ((DroneAgentState) ast);
 
-        if(agState.getlocacion().calcularAltura() == 3 && ((Esquina) agState.getlocacion()).hayCriminal()){
-          	agState.setvictimariosEncontrados(agState.getvictimariosEncontrados()+1);
-          	return environmentState;
+        if(agState.getlocacion().calcularAltura() == 3 && !((Esquina)agState.getlocacion()).getVisitada()){
+        	System.out.println("Ejecuta: Identificar");
+        	if(((Esquina) agState.getlocacion()).hayCriminal())
+        		agState.setvictimariosEncontrados(agState.getvictimariosEncontrados()+1);
+        	else
+        		((Esquina) agState.getlocacion()).setVisitada(true);
+        	return environmentState;
         }
 
         return null;

@@ -36,8 +36,7 @@ public class DroneAgent extends SearchBasedAgent {
 
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
-        operators.addElement(new Subir());	
-        operators.addElement(new Bajar());	
+        operators.addElement(new IdentificarVictimario());
         operators.addElement(new MoverLocacionN());	
         operators.addElement(new MoverLocacionE());	
         operators.addElement(new MoverLocacionS());	
@@ -46,7 +45,8 @@ public class DroneAgent extends SearchBasedAgent {
         operators.addElement(new MoverLocacionNO());	
         operators.addElement(new MoverLocacionSE());	
         operators.addElement(new MoverLocacionSO());	
-        operators.addElement(new IdentificarVictimario());	
+        operators.addElement(new Bajar());
+        operators.addElement(new Subir());	
 
         // Create the Problem which the agent will resolve
         Problem problem = new Problem(agGoal, agState, operators);
@@ -60,7 +60,7 @@ public class DroneAgent extends SearchBasedAgent {
     public Action selectAction() {
 
         // Create the search strategy
-        DepthFirstSearch strategy = new DepthFirstSearch();          
+        DepthFirstSearch strategy = new DepthFirstSearch(); 
 
         // Create a Search object with the strategy
         Search searchSolver = new Search(strategy);

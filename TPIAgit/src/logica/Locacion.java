@@ -204,8 +204,8 @@ public class Locacion {
 		//e5.addAdyacente(e4,OESTE);
 		//e6.addAdyacente(e4,ESTE);
 		//Nivel esquinas completo
-		Locacion c1 = new Locacion();c1.setNombre("C1");c1.setCentro(1,2);c1.setSenial(90);
-		Locacion sc1= new Locacion();sc1.setNombre("SC1");sc1.setCentro(1,2);sc1.setSenial(60);sc1.setPadre(c1);
+		Locacion c1 = new Locacion();c1.setNombre("C1");c1.setCentro(1,1);c1.setSenial(90);
+		Locacion sc1= new Locacion();sc1.setNombre("SC1");sc1.setCentro(1,1);sc1.setSenial(60);sc1.setPadre(c1);
 		//Locacion sc2= new Locacion();sc2.setNombre("SC2");sc2.setCentro(4,2);sc2.setSenial(120);sc2.setPadre(c1);
 		c1.addSublocacion(sc1);//c1.addSublocacion(sc2);
 		//sc1.addAdyacente(sc2,ESTE);sc2.addAdyacente(sc1,OESTE);
@@ -230,8 +230,8 @@ public class Locacion {
 	//	e5.addAdyacente(e4,OESTE);
 	//	e6.addAdyacente(e4,ESTE);
 		//nivel esquinas completo
-		Locacion c1 = new Locacion();c1.setNombre("C1");c1.setCentro(1,2);
-		Locacion sc1= new Locacion();sc1.setNombre("SC1");sc1.setCentro(1,2);sc1.setPadre(c1);
+		Locacion c1 = new Locacion();c1.setNombre("C1");c1.setCentro(1,1);
+		Locacion sc1= new Locacion();sc1.setNombre("SC1");sc1.setCentro(1,1);sc1.setPadre(c1);
 	//	Locacion sc2= new Locacion();sc1.setNombre("SC2");sc2.setCentro(4,2);sc2.setPadre(c1);
 		c1.addSublocacion(sc1);//c1.addSublocacion(sc2);
 		//sc1.addAdyacente(sc2,ESTE);sc2.addAdyacente(sc1,OESTE);

@@ -88,7 +88,15 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
             System.out.println();
 
             this.actionReturned(agent, action);
-
+            
+          //Hacemos pausa de unos segundos antes del siguiente paso
+        	try {
+    			Thread.sleep(10000);
+    		} catch (InterruptedException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		
         } while (!this.agentSucceeded(action) && !this.agentFailed(action));
 
         // Check what happened, if agent has reached the goal or not.
@@ -133,4 +141,5 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
      * @return The name of the simulator, e.g. 'SearchBasedAgentSimulator'
      */
     public abstract String getSimulatorName();
+    
 }

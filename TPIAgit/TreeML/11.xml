@@ -1,0 +1,2701 @@
+<tree id="11" edgedefault="directed">
+<node Id="0" Action="null" Cost="0.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 300
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="1" Action="MoverLocacionN" Cost="250.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 350
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="2" Action="MoverLocacionE" Cost="200.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 300
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="3" Action="Subir" Cost="300.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 400
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="7" Action="IdentificarVictimario" Cost="350.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 350
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="8" Action="MoverLocacionS" Cost="500.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 450
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="9" Action="Subir" Cost="550.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="14" Action="MoverLocacionS" Cost="600.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 450
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="15" Action="Subir" Cost="650.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="34" Action="MoverLocacionN" Cost="850.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="35" Action="MoverLocacionE" Cost="800.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="36" Action="Subir" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="89" Action="MoverLocacionS" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="90" Action="Subir" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="75" Action="IdentificarVictimario" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="76" Action="MoverLocacionO" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="77" Action="Subir" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="96" Action="Bajar" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="97" Action="Subir" Cost="1300.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="37" Action="Bajar" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="38" Action="Subir" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="98" Action="MoverLocacionN" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="99" Action="MoverLocacionE" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="100" Action="Subir" Cost="1200.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="21" Action="MoverLocacionN" Cost="750.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="22" Action="MoverLocacionE" Cost="700.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="23" Action="Subir" Cost="800.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="54" Action="IdentificarVictimario" Cost="850.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="55" Action="MoverLocacionS" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="56" Action="Subir" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="91" Action="MoverLocacionS" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="92" Action="Subir" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="46" Action="IdentificarVictimario" Cost="800.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="47" Action="MoverLocacionO" Cost="950.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="48" Action="Subir" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="80" Action="MoverLocacionO" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="81" Action="Subir" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="64" Action="Bajar" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="65" Action="Subir" Cost="1200.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="24" Action="Bajar" Cost="800.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="25" Action="Subir" Cost="950.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="66" Action="MoverLocacionN" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="67" Action="MoverLocacionE" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="68" Action="Subir" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="4" Action="IdentificarVictimario" Cost="300.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 300
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="5" Action="MoverLocacionO" Cost="450.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 400
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="6" Action="Subir" Cost="500.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 500
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="12" Action="MoverLocacionO" Cost="550.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 400
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="13" Action="Subir" Cost="600.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 500
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="29" Action="MoverLocacionN" Cost="800.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="30" Action="MoverLocacionE" Cost="750.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 500
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="31" Action="Subir" Cost="850.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="72" Action="IdentificarVictimario" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="73" Action="MoverLocacionS" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="74" Action="Subir" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="60" Action="MoverLocacionO" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="61" Action="Subir" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="84" Action="Bajar" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="85" Action="Subir" Cost="1250.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="32" Action="Bajar" Cost="850.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="33" Action="Subir" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="86" Action="MoverLocacionN" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="87" Action="MoverLocacionE" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="88" Action="Subir" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="16" Action="MoverLocacionN" Cost="700.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="17" Action="MoverLocacionE" Cost="650.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 500
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="18" Action="Subir" Cost="750.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="43" Action="IdentificarVictimario" Cost="800.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 550
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="44" Action="MoverLocacionS" Cost="950.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="45" Action="Subir" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="78" Action="MoverLocacionS" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="79" Action="Subir" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="39" Action="IdentificarVictimario" Cost="750.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 500
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="40" Action="MoverLocacionO" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="41" Action="Subir" Cost="950.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="62" Action="MoverLocacionO" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="63" Action="Subir" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="101" Action="MoverLocacionN" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="102" Action="MoverLocacionE" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="103" Action="Subir" Cost="1200.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="49" Action="Bajar" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="50" Action="Subir" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="19" Action="Bajar" Cost="750.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="20" Action="Subir" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="51" Action="MoverLocacionN" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="52" Action="MoverLocacionE" Cost="950.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="53" Action="Subir" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="95" Action="Bajar" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="10" Action="Bajar" Cost="550.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 500
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="11" Action="Subir" Cost="700.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="26" Action="MoverLocacionN" Cost="800.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="27" Action="MoverLocacionE" Cost="750.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="28" Action="Subir" Cost="850.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="69" Action="IdentificarVictimario" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="70" Action="MoverLocacionS" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="71" Action="Subir" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="106" Action="MoverLocacionS" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="107" Action="Subir" Cost="1200.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="57" Action="IdentificarVictimario" Cost="850.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 600
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E3
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="58" Action="MoverLocacionO" Cost="1000.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="59" Action="Subir" Cost="1050.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="93" Action="MoverLocacionO" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="94" Action="Subir" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="82" Action="Bajar" Cost="1100.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="83" Action="Subir" Cost="1250.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 900
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="42" Action="Bajar" Cost="900.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 700
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: SC1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="104" Action="Bajar" Cost="1150.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 800
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: E1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="105" Action="Subir" Cost="1300.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en C1: 90
+  Intensidad en SC1: 60
+    Intesidad en E1: 2
+    Intesidad en E2: 0
+    Intesidad en E3: 1
+
+Energia Inicial: 1000
+Energia Gastada: 900
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: C1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: true
+SURESTE: false
+SUR: false
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<edge source="0" target="1"/>
+<edge source="0" target="2"/>
+<edge source="0" target="3"/>
+<edge source="1" target="7"/>
+<edge source="1" target="8"/>
+<edge source="1" target="9"/>
+<edge source="2" target="4"/>
+<edge source="2" target="5"/>
+<edge source="2" target="6"/>
+<edge source="3" target="10"/>
+<edge source="3" target="11"/>
+<edge source="7" target="14"/>
+<edge source="7" target="15"/>
+<edge source="8" target="21"/>
+<edge source="8" target="22"/>
+<edge source="8" target="23"/>
+<edge source="9" target="24"/>
+<edge source="9" target="25"/>
+<edge source="14" target="34"/>
+<edge source="14" target="35"/>
+<edge source="14" target="36"/>
+<edge source="15" target="37"/>
+<edge source="15" target="38"/>
+<edge source="34" target="89"/>
+<edge source="34" target="90"/>
+<edge source="35" target="75"/>
+<edge source="35" target="76"/>
+<edge source="35" target="77"/>
+<edge source="36" target="96"/>
+<edge source="36" target="97"/>
+<edge source="37" target="98"/>
+<edge source="37" target="99"/>
+<edge source="37" target="100"/>
+<edge source="21" target="54"/>
+<edge source="21" target="55"/>
+<edge source="21" target="56"/>
+<edge source="22" target="46"/>
+<edge source="22" target="47"/>
+<edge source="22" target="48"/>
+<edge source="23" target="64"/>
+<edge source="23" target="65"/>
+<edge source="54" target="91"/>
+<edge source="54" target="92"/>
+<edge source="46" target="80"/>
+<edge source="46" target="81"/>
+<edge source="24" target="66"/>
+<edge source="24" target="67"/>
+<edge source="24" target="68"/>
+<edge source="4" target="12"/>
+<edge source="4" target="13"/>
+<edge source="5" target="16"/>
+<edge source="5" target="17"/>
+<edge source="5" target="18"/>
+<edge source="6" target="19"/>
+<edge source="6" target="20"/>
+<edge source="12" target="29"/>
+<edge source="12" target="30"/>
+<edge source="12" target="31"/>
+<edge source="13" target="32"/>
+<edge source="13" target="33"/>
+<edge source="29" target="72"/>
+<edge source="29" target="73"/>
+<edge source="29" target="74"/>
+<edge source="30" target="60"/>
+<edge source="30" target="61"/>
+<edge source="31" target="84"/>
+<edge source="31" target="85"/>
+<edge source="32" target="86"/>
+<edge source="32" target="87"/>
+<edge source="32" target="88"/>
+<edge source="16" target="43"/>
+<edge source="16" target="44"/>
+<edge source="16" target="45"/>
+<edge source="17" target="39"/>
+<edge source="17" target="40"/>
+<edge source="17" target="41"/>
+<edge source="18" target="49"/>
+<edge source="18" target="50"/>
+<edge source="43" target="78"/>
+<edge source="43" target="79"/>
+<edge source="39" target="62"/>
+<edge source="39" target="63"/>
+<edge source="40" target="101"/>
+<edge source="40" target="102"/>
+<edge source="40" target="103"/>
+<edge source="19" target="51"/>
+<edge source="19" target="52"/>
+<edge source="19" target="53"/>
+<edge source="20" target="95"/>
+<edge source="10" target="26"/>
+<edge source="10" target="27"/>
+<edge source="10" target="28"/>
+<edge source="11" target="42"/>
+<edge source="26" target="69"/>
+<edge source="26" target="70"/>
+<edge source="26" target="71"/>
+<edge source="27" target="57"/>
+<edge source="27" target="58"/>
+<edge source="27" target="59"/>
+<edge source="28" target="82"/>
+<edge source="28" target="83"/>
+<edge source="69" target="106"/>
+<edge source="69" target="107"/>
+<edge source="57" target="93"/>
+<edge source="57" target="94"/>
+<edge source="42" target="104"/>
+<edge source="42" target="105"/>
+</tree>

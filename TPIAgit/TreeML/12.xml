@@ -1,4 +1,4 @@
-<tree id="7" edgedefault="directed">
+<tree id="12" edgedefault="directed">
 <node Id="0" Action="null" Cost="0.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en C1: 90
@@ -8,7 +8,7 @@ Intensidad en C1: 90
     Intesidad en E3: 1
 
 Energia Inicial: 1000
-Energia Gastada: 550
+Energia Gastada: 300
 Victimarios Encontrados: 1
 Energia Inicial: 1000
 Locacion Actual: E3
@@ -23,7 +23,7 @@ OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: true
 "/>
-<node Id="1" Action="IdentificarVictimario" Cost="1.0" Estado_Agente="Estado del Drone:
+<node Id="1" Action="IdentificarVictimario" Cost="100.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en C1: 90
   Intensidad en SC1: 60
@@ -32,7 +32,7 @@ Intensidad en C1: 90
     Intesidad en E3: 1
 
 Energia Inicial: 1000
-Energia Gastada: 550
+Energia Gastada: 300
 Victimarios Encontrados: 1
 Energia Inicial: 1000
 Locacion Actual: E3
@@ -47,7 +47,7 @@ OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: true
 "/>
-<node Id="2" Action="MoverLocacionO" Cost="1.0" Estado_Agente="Estado del Drone:
+<node Id="2" Action="MoverLocacionO" Cost="100.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en C1: 90
   Intensidad en SC1: 60
@@ -56,7 +56,7 @@ Intensidad en C1: 90
     Intesidad en E3: 1
 
 Energia Inicial: 1000
-Energia Gastada: 650
+Energia Gastada: 400
 Victimarios Encontrados: 0
 Energia Inicial: 1000
 Locacion Actual: E1
@@ -71,7 +71,7 @@ OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: true
 "/>
-<node Id="3" Action="Subir" Cost="1.0" Estado_Agente="Estado del Drone:
+<node Id="3" Action="Subir" Cost="300.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en C1: 90
   Intensidad en SC1: 60
@@ -80,7 +80,7 @@ Intensidad en C1: 90
     Intesidad en E3: 1
 
 Energia Inicial: 1000
-Energia Gastada: 750
+Energia Gastada: 500
 Victimarios Encontrados: 0
 Energia Inicial: 1000
 Locacion Actual: SC1

@@ -8,7 +8,7 @@ import frsf.cidisi.faia.state.EnvironmentState;
 
 public class Subir extends SearchAction {
 
-	private int COSTO_SUBIR = 100;
+	private int COSTO_SUBIR = 200;
 	
     /**
      * This method updates a tree node state when the search process is running.
@@ -17,9 +17,8 @@ public class Subir extends SearchAction {
     @Override
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         DroneAgentState agState = (DroneAgentState) s;
-        //System.out.println(agState.getlocacion().getNombre());
+
         if(agState.getlocacion().calcularAltura() != 1 && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_SUBIR){
-           	System.out.println("Ejecuta: Subir" + " ;Locacion: " + agState.getlocacion().getNombre());
         	agState.setlocacion(agState.getlocacion().getPadre());
         	agState.setenergiaGastada(agState.getenergiaGastada()+COSTO_SUBIR);
         	return agState;
@@ -57,7 +56,7 @@ public class Subir extends SearchAction {
      */
     @Override
     public Double getCost() {
-        return new Double(0);
+        return new Double(COSTO_SUBIR);
     }
 
     /**

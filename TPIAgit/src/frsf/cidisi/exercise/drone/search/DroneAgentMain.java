@@ -5,8 +5,9 @@ import frsf.cidisi.faia.simulator.SearchBasedAgentSimulator;
 
 public class DroneAgentMain {
 
-    public static void main(String[] args) throws PrologConnectorException {
+    public static void main(int estrategia) throws PrologConnectorException {
         DroneAgent agent = new DroneAgent();
+        agent.setEstrategia(estrategia);
 
         DroneEnvironment environment = new DroneEnvironment();
 

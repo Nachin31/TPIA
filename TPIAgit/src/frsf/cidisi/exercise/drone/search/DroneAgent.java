@@ -25,6 +25,12 @@ import java.util.Vector;
 
 public class DroneAgent extends SearchBasedAgent {
 
+	private int search_strategy = 1;
+	public static final int PROFUNDIDAD=1;
+	public static final int ANCHURA=2;
+	public static final int COSTO_UNIFORME=3;
+	public static final int A_ASTERISCO=4;
+	
     public DroneAgent() {
 
         // The Agent Goal
@@ -58,10 +64,23 @@ public class DroneAgent extends SearchBasedAgent {
      */
     @Override
     public Action selectAction() {
-
-        // Create the search strategy
-        DepthFirstSearch strategy = new DepthFirstSearch(); 
-
+    	
+    	Strategy strategy = null;
+    	switch(search_strategy){
+    	case(PROFUNDIDAD):
+    		strategy = new DepthFirstSearch();
+    		break;
+    	case(ANCHURA):
+    		strategy = new BreathFirstSearch();
+    		break;
+    	case(COSTO_UNIFORME):
+    		strategy = new UniformCostSearch(new CostFunction());
+    		break;
+    	case(A_ASTERISCO):
+    		strategy = new AStarSearch(new CostFunction(),new Heuristic());
+    		break;
+    	}
+    	
         // Create a Search object with the strategy
         Search searchSolver = new Search(strategy);
 
@@ -96,4 +115,9 @@ public class DroneAgent extends SearchBasedAgent {
     public void see(Perception p) {
         this.getAgentState().updateState(p);
     }
+    
+    public void setEstrategia(int s){
+    	search_strategy = s;
+    }
+    
 }

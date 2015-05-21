@@ -11,7 +11,7 @@ public class AgentGoal extends GoalTest {
     public boolean isGoalState (AgentState agentState) {
     
         if  (((DroneAgentState) agentState).getvictimariosEncontrados() == 1
-        		|| ((DroneAgentState) agentState).getlocacion().getVisitada()){
+        		|| ((DroneAgentState) agentState).getciudad().getVisitada()){
             return true;
         }
         return false;

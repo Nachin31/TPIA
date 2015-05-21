@@ -19,7 +19,6 @@ public class Bajar extends SearchAction {
         DroneAgentState agState = (DroneAgentState) s;
         
         if(agState.getlocacion().calcularAltura() != 3 && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_BAJAR){
-        	System.out.println("Ejecuta: Bajar");
         	agState.setlocacion(agState.getlocacion().getLocacionBajada());
         	agState.setenergiaGastada(agState.getenergiaGastada()+COSTO_BAJAR);
         	return agState;
@@ -56,7 +55,7 @@ public class Bajar extends SearchAction {
      */
     @Override
     public Double getCost() {
-        return new Double(0);
+        return new Double(COSTO_BAJAR);
     }
 
     /**

@@ -60,10 +60,9 @@ public class Locacion {
 		return locaciones;
 	}
 	
-	public void actualizarLocacion(int x,int y,Integer cantPersonas,Boolean hayMalechor){//TODO completar
-		//Busca todas las esquina dentro de sí que poseen el dado x,y (en caso de pertenecer a 2 cuadrantes)
-		//y las actualiza con la cant de personas y el boolean dados; en caso de solo actualizar
-		//una de ellas, la otra será null.
+	public void actualizarEsquina(int x,int y,Integer cantPersonas,Boolean hayMalechor){
+		for(Locacion l : getSublocaciones())
+			l.actualizarEsquina(x, y, cantPersonas, hayMalechor);
 	}
 	
 	public void setPadre(Locacion lp){

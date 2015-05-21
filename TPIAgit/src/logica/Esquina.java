@@ -82,6 +82,22 @@ public class Esquina extends Locacion{
 			return hayCriminal() || ((Esquina) adyacentes[direccion]).hayVictimarioR(direccion);
 	}
 	
+	public int cantEsquinasDireccion(int direccion){
+		int cant=0;
+		if(adyacentes[direccion]==null)
+			return 0;
+		else
+			cant += 1 +((Esquina)adyacentes[direccion]).cantEsquinasDireccion(direccion);
+		return cant;
+	}
+	
+	public void actualizarEsquina(int x,int y,Integer cantPersonas,Boolean hayMalechor){
+		if(getX() == x && getY() == y){
+			this.setCantidadPersonas(cantPersonas);
+			this.setCriminal(hayMalechor);
+		}
+	}
+	
 	public Esquina clone(Locacion parent){
 		Esquina esq = new Esquina();
 		for(Locacion l : parent.getSublocaciones()){
@@ -96,6 +112,7 @@ public class Esquina extends Locacion{
 		esq.setNombre(getNombre());
 		esq.setCantidadPersonas(getCantidadPersonas());
 		esq.setCriminal(hayCriminal());
+
 		return esq;
 	}
 	public boolean equals(Object obj){// 2 esquinas son iguales si tiene el mismo nombre, el mismo nombre de padre, la misma señal y el mismo valor de hayVictimario

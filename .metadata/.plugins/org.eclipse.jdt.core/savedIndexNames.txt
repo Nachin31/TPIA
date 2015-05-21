@@ -3,8 +3,8 @@ INDEX VERSION 1.126+F:\Nacho UTN\Inteligencia Artificial\Herramientas\IDEMIA\Ecl
 898289412.index
 3366788928.index
 3792919871.index
-3652069194.index
 2991094687.index
+3652069194.index
 1681605053.index
 293861729.index
 3630022016.index

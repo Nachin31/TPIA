@@ -1,0 +1,40 @@
+package frsf.cidisi.exercise.drone.search;
+
+import logica.Esquina;
+import frsf.cidisi.faia.solver.search.IEstimatedCostFunction;
+import frsf.cidisi.faia.solver.search.NTree;
+
+/**
+ * This class allows to define a function to be used by any
+ * informed search strategy, like A Star or Greedy.
+ */
+public class Heuristic implements IEstimatedCostFunction {
+
+    /**
+     * It returns the estimated cost to reach the goal from a NTree node.
+     */
+    @Override
+    public double getEstimatedCost(NTree node) {
+        DroneAgentState agState = (DroneAgentState) node.getAgentState();
+        
+        int heuristic=0;
+        if(agState.getlocacion().calcularAltura() == 3 && agState.getdireccionVictimario()[8] != true){
+	        for(int i=0;i<8;i++){
+	        	//Si posee alguna dirección con vistimarios, el costo de llegar será menor mientras
+	        	//se mantenga en esa direccion
+	        	if(agState.getdireccionVictimario()[i]){
+	        		heuristic += 50 * ((Esquina)agState.getlocacion()).cantEsquinasDireccion(i);
+	        	}
+	        	//Si no hay dirección con victimario, se estima en 100 * cantidad de pasos en
+	        	//cada dirección
+	        	else
+	        		heuristic += 100 * ((Esquina)agState.getlocacion()).cantEsquinasDireccion(i);
+	        }
+        }
+        else{
+        	heuristic += 100 * (3 - agState.getlocacion().calcularAltura());
+        	
+        }
+        return heuristic;
+    }
+}

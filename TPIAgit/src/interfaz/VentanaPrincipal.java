@@ -22,6 +22,9 @@ import javax.swing.JCheckBox;
 import javax.swing.border.LineBorder;
 
 import excepciones.CoordenadasSinEsquinaException;
+import frsf.cidisi.exercise.drone.search.DroneAgent;
+import frsf.cidisi.exercise.drone.search.DroneAgentMain;
+import frsf.cidisi.faia.exceptions.PrologConnectorException;
 
 import java.awt.TextArea;
 import java.awt.event.ActionListener;
@@ -43,10 +46,10 @@ public class VentanaPrincipal extends JFrame {
 	private List<Esquina> esquinas;
 	private final int DIAMETRO_ESQUINA=7;
 	private Esquina esquinaEnEdicion;
-	private float energiaGastada;
-	private float energiaTotal;
-	private float porcentajeRemanente;
-	private JLabel label;
+	private static float energiaGastada;
+	private static float energiaTotal;
+	private static float porcentajeRemanente;
+	private static JLabel label;
 	
 	public static void main(String[] args){
 		new VentanaPrincipal();
@@ -237,18 +240,37 @@ public class VentanaPrincipal extends JFrame {
 		jPanelConsolaIzquierda.add(panel_1);
 		panel_1.setLayout(null);
 		
-		JComboBox<String> comboBox = new JComboBox<String>();
+		final JComboBox<String> comboBox = new JComboBox<String>();
 		comboBox.setBounds(10, 24, 130, 27);
 		panel_1.add(comboBox);
 		comboBox.addItem("En anchura");
 		comboBox.addItem("En profundidad");
-		comboBox.addItem("Por menor costo");
-		comboBox.addItem("AVARA");
+		comboBox.addItem("Por costo uniforme");
+		comboBox.addItem("A*");
 		comboBox.setFont(new Font("Calibri", Font.BOLD, 13));
 		
 		JButton btnComenzar = new JButton("COMENZAR");
 		btnComenzar.setBounds(10, 62, 130, 35);
 		panel_1.add(btnComenzar);
+		
+		btnComenzar.addMouseListener(new java.awt.event.MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				String item = (String)comboBox.getSelectedItem();
+				try {
+					if(item.equals("En anchura"))						
+						DroneAgentMain.main(DroneAgent.ANCHURA);
+					else if(item.equals("En profundidad"))
+						DroneAgentMain.main(DroneAgent.PROFUNDIDAD);
+					else if(item.equals("Por costo uniforme"))
+						DroneAgentMain.main(DroneAgent.COSTO_UNIFORME);
+					else
+						DroneAgentMain.main(DroneAgent.A_ASTERISCO);
+				} catch (PrologConnectorException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		
 		JPanel panel_2 = new JPanel(){
 			private static final long serialVersionUID = -7651674100274809872L;
@@ -395,6 +417,14 @@ public class VentanaPrincipal extends JFrame {
 		setVisible(true);
 		
 		
+	}
+	
+	//TODO Actualizador de interfaz
+	public static void updateEnergía(int gasto){
+		energiaGastada = gasto;
+		porcentajeRemanente = (1 -(energiaGastada/energiaTotal))*100;
+		label.setText(""+String.format("%.2f", porcentajeRemanente)+"%");
+		label.repaint();
 	}
 	
 }

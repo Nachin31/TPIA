@@ -114,6 +114,15 @@
             <element xmi:type="idemia:DataStructure" href="default.idemia#//@Environment/@EnvironmentState/@DataStructure.1"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_--c5MeF3EeS5k4BSP1L8Zw"/>
           </children>
+          <children xmi:type="notation:Shape" xmi:id="_jHomYQBPEeWJFr5UcRq7mg" type="3009" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_jHyXYQBPEeWJFr5UcRq7mg" type="5014"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_jHyXYgBPEeWJFr5UcRq7mg" type="5015">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_jHyXYwBPEeWJFr5UcRq7mg"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_jHyXZABPEeWJFr5UcRq7mg" type="5016"/>
+            <element xmi:type="idemia:DataStructure" href="default.idemia#//@Environment/@EnvironmentState/@DataStructure.2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jHyXYABPEeWJFr5UcRq7mg"/>
+          </children>
           <styles xmi:type="notation:SortingStyle" xmi:id="_7BhwpOF3EeS5k4BSP1L8Zw"/>
           <styles xmi:type="notation:FilteringStyle" xmi:id="_7BhwpeF3EeS5k4BSP1L8Zw"/>
         </children>

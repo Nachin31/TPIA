@@ -4,6 +4,7 @@
     <EnvironmentState name="DroneEnvironmentState">
       <DataStructure name="ciudad" type="Other"/>
       <DataStructure name="locacionDrone" type="Other"/>
+      <DataStructure name="energiaGastada"/>
     </EnvironmentState>
   </Environment>
   <Agent name="DroneAgent">

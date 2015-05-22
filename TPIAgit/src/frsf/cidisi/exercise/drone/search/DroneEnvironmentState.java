@@ -1,5 +1,6 @@
 package frsf.cidisi.exercise.drone.search;
 
+import interfaz.VentanaPrincipal;
 import logica.Locacion;
 import frsf.cidisi.faia.state.EnvironmentState;
 
@@ -26,7 +27,7 @@ public class DroneEnvironmentState extends EnvironmentState {
      */
     @Override
     public void initState() {
-    	energia = 0;
+    	energia = 1000;
         ciudad.armar_ciudad_con_valores();
         locacionDrone = ciudad.getSublocaciones().get(0);
         

@@ -72,7 +72,6 @@ public class DroneAgentState extends SearchBasedAgentState {
     	if(locacion.calcularAltura() > aux.getZ()) // subió
     		locacion = locacion.getPadre();
     	else if(locacion.calcularAltura() < aux.getZ()){ // bajó
-    		//TODO si es esquina debe modificar todas las q tengan el mismo centro
     		for(Locacion l: locacion.getSublocaciones())
     			if(l.getCentro().getX() == aux.getX() && l.getCentro().getY() == aux.getY())
     				locacion = l;
@@ -85,12 +84,18 @@ public class DroneAgentState extends SearchBasedAgentState {
     	
     	// Actualizamos la ciudad
     	List<Locacion> actualizar = locacion.getPadre().getSublocaciones();
-    	for(Locacion lp : percepcion.getantena()){
-    		for(Locacion lc : actualizar){
-    			if(lp.getCentro().getX() == lc.getCentro().getX() && lp.getCentro().getY() == lc.getCentro().getY())
-    				lc.setSenial(lp.getSenial());
+    	if(locacion.calcularAltura()<3)
+	    	for(Locacion lp : percepcion.getantena()){
+	    		for(Locacion lc : actualizar){
+	    			if(lp.getCentro().getX() == lc.getCentro().getX() && lp.getCentro().getY() == lc.getCentro().getY())
+	    				lc.setSenial(lp.getSenial());
+	    		}
+	    	}
+    	else
+    		for(Locacion lp : percepcion.getantena()){
+    			ciudad.actualizarEsquina(lp.getCentro().getX(),lp.getCentro().getY(),lp.getSenial());
+    			VentanaPrincipal.updateEsquina(lp.getCentro().getX(),lp.getCentro().getY(),lp.getSenial());
     		}
-    	}
     	
     	//Si hay un victimario en la posición actual, la cámara debe advertirlo y
     	//actualizar el estado de la locacion actual del drone
@@ -98,7 +103,7 @@ public class DroneAgentState extends SearchBasedAgentState {
     		((Esquina) locacion).setCriminal(true);
     	
     	VentanaPrincipal.updateEnergía(energiaGastada);
-    	
+    	VentanaPrincipal.updateLocacionDrone(locacion);
     }
 
     /**

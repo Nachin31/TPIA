@@ -7,8 +7,9 @@ public class DroneAgentMain {
 
     public static void main(int estrategia) throws PrologConnectorException {
         DroneAgent agent = new DroneAgent();
+        
         agent.setEstrategia(estrategia);
-
+        
         DroneEnvironment environment = new DroneEnvironment();
 
         SearchBasedAgentSimulator simulator =

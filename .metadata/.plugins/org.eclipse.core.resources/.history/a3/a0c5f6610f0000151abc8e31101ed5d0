@@ -1,0 +1,128 @@
+package interfaz;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Polygon;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
+import java.util.List;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
+import excepciones.CoordenadasSinEsquinaException;
+import logica.Esquina;
+
+/**Esta clase maneja el panel que muestra el mapa
+ * 
+ * @author Nacho Gómez
+ *
+ */
+public class PanelMapa extends JPanel {
+	private static final long serialVersionUID = 3275005094743419907L;
+	private List<Esquina> esquinas;
+	private int diametroEsquina;
+	private boolean dibujarCuadranteA1 = false;
+	private boolean dibujarCuadranteA2 = false;
+	
+	public PanelMapa(List<Esquina> esqs,int diam){
+		diametroEsquina = diam;
+		esquinas = esqs;
+		this.addMouseMotionListener(new MouseMotionListener(){
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			@Override
+			public void mouseMoved(MouseEvent e) {
+				int x=e.getX();
+				int y=e.getY();
+				if(x > 0 && x < 300 && y > 0 && y < 300){
+					dibujarCuadranteA2=true;
+					repaint();
+				}
+				
+			}
+		});
+	}
+	
+	public void paint (Graphics g){
+		super.paint(g);
+		Dimension tamanio = getSize();
+		setOpaque(false);
+		
+		//Dibujamos el mapa
+		ImageIcon imagenFondo = new ImageIcon(getClass().getResource("/imagenes/Mapatotal.png"));
+		g.drawImage(imagenFondo.getImage(),0,0,tamanio.width,tamanio.height, null);
+		
+		//Delimitamos el área donde pueden editarse las esquinas
+		g.setColor(Color.RED);
+		((Graphics2D) g).setStroke(new BasicStroke(2));
+		Polygon plg = new Polygon();
+		plg.addPoint(145,2);
+		plg.addPoint(458,79);
+		plg.addPoint(386,375);
+		plg.addPoint(70,293);
+		((Graphics2D)g).draw(plg);
+		
+		if(dibujarCuadranteA1){
+			//g.setColor(Color.CYAN);
+			((Graphics2D) g).setStroke(new BasicStroke(2));
+			Polygon poly = new Polygon();
+			poly.addPoint(145,2);//p1
+			
+			poly.addPoint(301,40); //p2
+			
+			poly.addPoint(264,193);//p3
+			
+			poly.addPoint(107,152);//p4
+			
+			((Graphics2D)g).draw(poly);
+		}
+		else if(dibujarCuadranteA2){
+			//g.setColor(Color.CYAN);
+			((Graphics2D) g).setStroke(new BasicStroke(2));
+			Polygon poly = new Polygon();
+			poly.addPoint(301,40);//p1
+			poly.addPoint(458,79);//p2
+			
+			
+			
+			poly.addPoint(430,200);//p3??
+			
+			poly.addPoint(264,193);//p4
+			
+			((Graphics2D)g).draw(poly);
+		}
+		
+		//Se grafican las esquinas para ver si estan bien ubicadas
+		for(Esquina e : esquinas){
+			if(e.getCantidadPersonas()==0)
+				g.setColor(Color.BLUE);
+			else if(e.hayCriminal())
+				g.setColor(Color.RED);
+			else
+				g.setColor(Color.GREEN);
+			g.fillOval(e.getX(),e.getY(),diametroEsquina,diametroEsquina);
+		}
+			
+	}
+
+	public Esquina getEsquina(int x,int y) throws CoordenadasSinEsquinaException{
+		Esquina esq = null;
+		for(Esquina e : esquinas){
+			if(x > e.getX() && x < (e.getX()+diametroEsquina) && y > e.getY() && y < (e.getY()+diametroEsquina)){
+				esq = e;
+				break;
+			}
+		}
+		if(esq == null)
+			throw new CoordenadasSinEsquinaException();
+		return esq;
+	}
+	
+}

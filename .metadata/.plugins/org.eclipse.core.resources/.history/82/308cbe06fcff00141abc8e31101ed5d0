@@ -1,0 +1,33 @@
+package interfaz;
+
+import javax.swing.JPanel;
+
+public class ProgressBar extends JPanel {
+	private static final long serialVersionUID = 7466187301695688070L;
+
+	double maxValue;
+	double actualValue;
+	String unit;
+	
+	public ProgressBar(){
+		maxValue = 100;
+		actualValue = 100;
+		unit = "Porcentaje";
+	}
+	
+	public ProgressBar(int max,int act,String unit){
+		maxValue = max;
+		actualValue = act;
+		unit = unit;
+	}
+	
+	
+	
+	public void changeUnit(){
+		if(unit.equals("Porcentaje"))
+			unit = "Unidades";
+		else
+			unit = "Porcentaje";
+	}
+	
+}

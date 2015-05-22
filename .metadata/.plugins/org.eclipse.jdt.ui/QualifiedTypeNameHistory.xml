@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="logica.Esquina"/>
+<fullyQualifiedTypeName name="logica.Locacion"/>
+<fullyQualifiedTypeName name="frsf.cidisi.exercise.drone.search.DroneAgentMain"/>
+<fullyQualifiedTypeName name="frsf.cidisi.exercise.drone.search.DroneAgent"/>
+<fullyQualifiedTypeName name="interfaz.VentanaPrincipal"/>
+</qualifiedTypeNameHistroy>

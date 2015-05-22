@@ -1,0 +1,18 @@
+package logica;
+
+public class HiloSimulador extends Thread {
+
+	int estrategia;
+	Locacion ciudad;
+	
+	public HiloSimulador(int strategy,Locacion city){
+		estrategia = estrategia;
+		ciudad = city;
+	}
+	
+	public void run(){
+		
+	}
+	
+	
+}

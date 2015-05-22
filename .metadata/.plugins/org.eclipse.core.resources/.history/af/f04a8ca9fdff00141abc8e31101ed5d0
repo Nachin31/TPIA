@@ -1,0 +1,74 @@
+package interfaz;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class ProgressBar extends JPanel {
+	private static final long serialVersionUID = 7466187301695688070L;
+
+	private float maxValue;
+	private float actualValue;
+	private String unit;
+	private JLabel label;
+	
+	public ProgressBar(){
+		maxValue = 100;
+		actualValue = 100;
+		unit = "Porcentaje";
+	}
+	
+	public ProgressBar(int max,int act,String unidad){
+		maxValue = max;
+		actualValue = act;
+		unit = unidad;
+	}
+	
+	private void initComponents(){
+		float porcentajeRemanente = (actualValue/maxValue)*100;
+		label = new JLabel(""+String.format("%.2f", porcentajeRemanente)+"%");
+		label.setForeground(Color.WHITE);
+		label.setFont(new Font("Calibri", Font.BOLD, 13));
+		label.setBounds(224, 5, 91, 18);
+		this.add(label);
+		
+	}
+
+	public void paintComponent (Graphics g){
+		Dimension tamanio = getSize();
+		ImageIcon imagenFondo = new ImageIcon(getClass().getResource("/imagenes/progress-bar.png"));
+		g.drawImage(imagenFondo.getImage(),0,0,tamanio.width,tamanio.height, null);
+		
+		//La cantidad de energia para poder graficarla
+		float proporcionRemanente = actualValue/maxValue;
+		float proporcionBarraGastada = proporcionRemanente*tamanio.width;
+		
+		if(unit.equals("Porcentaje"))
+			label.setText(""+String.format("%.2f",proporcionRemanente)+"%");
+		else
+			label.setText(""+(int)actualValue);
+		
+		
+		this.setBackground(Color.black);
+		g.fillRect(tamanio.width-((int)proporcionBarraGastada),0,((int)proporcionBarraGastada),tamanio.height);
+		setOpaque(false);
+		super.paintComponent(g);
+	}
+
+	public void changeUnit(){
+		if(unit.equals("Porcentaje"))
+			unit = "Unidades";
+		else
+			unit = "Porcentaje";
+	}
+	
+	public void updateActualValue(int newVal){
+		actualValue = newVal;
+	}
+	
+}

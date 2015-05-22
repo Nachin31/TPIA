@@ -1,5 +1,105 @@
-<tree id="8" edgedefault="directed">
+<tree id="28" edgedefault="directed">
 <node Id="0" Action="null" Cost="0.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1B7
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="1" Action="MoverLocacionE" Cost="1.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1B2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="2" Action="MoverLocacionS" Cost="1.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 650
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1B7
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="3" Action="Subir" Cost="1.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="4" Action="MoverLocacionS" Cost="2.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -12,19 +112,44 @@ Energia Inicial: 1000
 Energia Gastada: 800
 Victimarios Encontrados: 0
 Energia Inicial: 1000
+Locacion Actual: A1M1B5
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="5" Action="MoverLocacionO" Cost="2.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
 Locacion Actual: A1M1B1
 Direccion Victimario: 
 NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: false
 "/>
-<node Id="1" Action="MoverLocacionS" Cost="-1.0" Estado_Agente="Estado del Drone:
+<node Id="6" Action="Subir" Cost="2.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -37,44 +162,19 @@ Energia Inicial: 1000
 Energia Gastada: 850
 Victimarios Encontrados: 0
 Energia Inicial: 1000
-Locacion Actual: A1M1B5
+Locacion Actual: A1M1
 Direccion Victimario: 
 NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: false
 "/>
-<node Id="2" Action="MoverLocacionO" Cost="-1.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 800
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1B1
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="3" Action="Subir" Cost="-1.0" Estado_Agente="Estado del Drone:
+<node Id="12" Action="MoverLocacionN" Cost="3.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -87,19 +187,119 @@ Energia Inicial: 1000
 Energia Gastada: 900
 Victimarios Encontrados: 0
 Energia Inicial: 1000
+Locacion Actual: A1M1B2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="13" Action="Subir" Cost="3.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 1000
+Victimarios Encontrados: 0
+Energia Inicial: 1000
 Locacion Actual: A1M1
 Direccion Victimario: 
 NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: false
 "/>
-<node Id="4" Action="MoverLocacionN" Cost="-2.0" Estado_Agente="Estado del Drone:
+<node Id="14" Action="MoverLocacionE" Cost="3.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1B2
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="15" Action="MoverLocacionS" Cost="3.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 850
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1B7
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="16" Action="Subir" Cost="3.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 950
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="17" Action="Bajar" Cost="3.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -118,13 +318,13 @@ NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: false
 "/>
-<node Id="5" Action="IdentificarVictimario" Cost="-2.0" Estado_Agente="Estado del Drone:
+<node Id="7" Action="IdentificarVictimario" Cost="2.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -134,57 +334,7 @@ Intensidad en A1: 0
     Intesidad en A1M1B7: 2
 
 Energia Inicial: 1000
-Energia Gastada: 800
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1B1
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="6" Action="MoverLocacionE" Cost="-2.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 900
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1B2
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="7" Action="MoverLocacionS" Cost="-2.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 900
+Energia Gastada: 650
 Victimarios Encontrados: 0
 Energia Inicial: 1000
 Locacion Actual: A1M1B7
@@ -193,13 +343,13 @@ NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: false
 "/>
-<node Id="8" Action="Subir" Cost="-2.0" Estado_Agente="Estado del Drone:
+<node Id="8" Action="MoverLocacionN" Cost="2.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -209,7 +359,32 @@ Intensidad en A1: 0
     Intesidad en A1M1B7: 2
 
 Energia Inicial: 1000
-Energia Gastada: 1000
+Energia Gastada: 750
+Victimarios Encontrados: 0
+Energia Inicial: 1000
+Locacion Actual: A1M1B1
+Direccion Victimario: 
+NORTE: false
+NORESTE: false
+ESTE: false
+SURESTE: false
+SUR: true
+SUROESTE: false
+OESTE: false
+NOROESTE: false
+ESQUINA ACTUAL: false
+"/>
+<node Id="9" Action="Subir" Cost="2.0" Estado_Agente="Estado del Drone:
+Ciudad:
+Intensidad en A1: 0
+  Intensidad en A1M1: 0
+    Intesidad en A1M1B1: 2
+    Intesidad en A1M1B2: 1
+    Intesidad en A1M1B5: 0
+    Intesidad en A1M1B7: 2
+
+Energia Inicial: 1000
+Energia Gastada: 850
 Victimarios Encontrados: 0
 Energia Inicial: 1000
 Locacion Actual: A1M1
@@ -218,13 +393,13 @@ NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: false
 "/>
-<node Id="9" Action="MoverLocacionE" Cost="-3.0" Estado_Agente="Estado del Drone:
+<node Id="10" Action="Bajar" Cost="2.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -234,7 +409,7 @@ Intensidad en A1: 0
     Intesidad en A1M1B7: 2
 
 Energia Inicial: 1000
-Energia Gastada: 900
+Energia Gastada: 850
 Victimarios Encontrados: 0
 Energia Inicial: 1000
 Locacion Actual: A1M1B2
@@ -243,13 +418,13 @@ NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
 ESQUINA ACTUAL: false
 "/>
-<node Id="10" Action="MoverLocacionS" Cost="-3.0" Estado_Agente="Estado del Drone:
+<node Id="11" Action="Subir" Cost="2.0" Estado_Agente="Estado del Drone:
 Ciudad:
 Intensidad en A1: 0
   Intensidad en A1M1: 0
@@ -259,141 +434,16 @@ Intensidad en A1: 0
     Intesidad en A1M1B7: 2
 
 Energia Inicial: 1000
-Energia Gastada: 900
+Energia Gastada: 950
 Victimarios Encontrados: 0
 Energia Inicial: 1000
-Locacion Actual: A1M1B7
+Locacion Actual: A1
 Direccion Victimario: 
 NORTE: false
 NORESTE: false
 ESTE: false
 SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="11" Action="Subir" Cost="-3.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 1000
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="12" Action="MoverLocacionS" Cost="-4.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 1050
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1B5
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="13" Action="MoverLocacionO" Cost="-4.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 1000
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1B1
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="14" Action="IdentificarVictimario" Cost="-4.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 900
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1B7
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
-SUROESTE: false
-OESTE: false
-NOROESTE: false
-ESQUINA ACTUAL: false
-"/>
-<node Id="15" Action="MoverLocacionN" Cost="-4.0" Estado_Agente="Estado del Drone:
-Ciudad:
-Intensidad en A1: 0
-  Intensidad en A1M1: 0
-    Intesidad en A1M1B1: 2
-    Intesidad en A1M1B2: 1
-    Intesidad en A1M1B5: 0
-    Intesidad en A1M1B7: 2
-
-Energia Inicial: 1000
-Energia Gastada: 1000
-Victimarios Encontrados: 0
-Energia Inicial: 1000
-Locacion Actual: A1M1B1
-Direccion Victimario: 
-NORTE: false
-NORESTE: false
-ESTE: false
-SURESTE: false
-SUR: false
+SUR: true
 SUROESTE: false
 OESTE: false
 NOROESTE: false
@@ -403,15 +453,17 @@ ESQUINA ACTUAL: false
 <edge source="0" target="2"/>
 <edge source="0" target="3"/>
 <edge source="1" target="4"/>
-<edge source="2" target="5"/>
-<edge source="2" target="6"/>
+<edge source="1" target="5"/>
+<edge source="1" target="6"/>
 <edge source="2" target="7"/>
 <edge source="2" target="8"/>
-<edge source="5" target="9"/>
-<edge source="5" target="10"/>
-<edge source="5" target="11"/>
-<edge source="9" target="12"/>
-<edge source="9" target="13"/>
-<edge source="10" target="14"/>
-<edge source="10" target="15"/>
+<edge source="2" target="9"/>
+<edge source="3" target="10"/>
+<edge source="3" target="11"/>
+<edge source="4" target="12"/>
+<edge source="4" target="13"/>
+<edge source="5" target="14"/>
+<edge source="5" target="15"/>
+<edge source="5" target="16"/>
+<edge source="6" target="17"/>
 </tree>

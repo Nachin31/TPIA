@@ -91,7 +91,7 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
             
           //Hacemos pausa de unos segundos antes del siguiente paso
         	try {
-    			Thread.sleep(10000);
+    			Thread.sleep(7000);
     		} catch (InterruptedException e) {
     			// TODO Auto-generated catch block
     			e.printStackTrace();

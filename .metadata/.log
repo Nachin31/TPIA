@@ -332,3 +332,38 @@ java.lang.ArrayIndexOutOfBoundsException
 	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:102)
 	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-22 03:54:57.435
+!MESSAGE NLS unused message: Reflective3CreationTool_title in: messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-22 03:54:57.435
+!MESSAGE NLS unused message: Reflective3CreationTool_desc in: messages
+
+!ENTRY org.eclipse.jface 2 0 2015-05-22 03:55:00.967
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-22 03:55:00.967
+!MESSAGE A conflict occurred for F5:
+Binding(F5,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.StepInto,Step Into,
+		Step into,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(F5,
+	ParameterizedCommand(Command(org.eclipse.ui.file.refresh,Refresh,
+		Refresh the selected items,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F5,
+	ParameterizedCommand(Command(utn.frsf.cidisi.idemia.diagram.updateDiagram,Update Idemia diagram,
+		Perform Idemia diagram update,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		utn.frsf.cidisi.idemia.diagram.part.IdemiaDiagramUpdateCommand,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	utn.frsf.cidisi.idemia.diagram.ui.diagramContext,,,system)

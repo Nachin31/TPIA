@@ -37,6 +37,17 @@ public class Locacion {
 		nombre = nomb;
 	}
 	
+	public Locacion(int x, int y, String nomb, Locacion padre){
+		sublocaciones = new ArrayList<Locacion>();
+		adyacentes = new Locacion[8];
+		centro = new Point(x,y);
+		setCentro(x,y);
+		valorSenial = 0;
+		nombre = nomb;
+		centro.setLocation(x,y);
+		this.padre = padre;
+	}
+	
 	public void addSublocacion(Locacion l){
 		l.setPadre(this);
 		sublocaciones.add(l);
@@ -60,9 +71,9 @@ public class Locacion {
 		return locaciones;
 	}
 	
-	public void actualizarEsquina(int x,int y,Integer cantPersonas,Boolean hayMalechor){
+	public void actualizarEsquina(double d,double e,int cantPersonas){
 		for(Locacion l : getSublocaciones())
-			l.actualizarEsquina(x, y, cantPersonas, hayMalechor);
+			l.actualizarEsquina(d, e, cantPersonas);
 	}
 	
 	public void setPadre(Locacion lp){
@@ -175,8 +186,9 @@ public class Locacion {
 	}
 	
 	@Override
-	public boolean equals(Object obj){
+	public boolean equals(Object obj){	
 		boolean res = true;
+
 		Locacion loc = (Locacion) obj;
 		
 		res = res && (loc.getSenial() == valorSenial);
@@ -185,14 +197,47 @@ public class Locacion {
 		for(int i=0;i < loc.getSublocaciones().size();i++){
 			res = res && loc.getSublocaciones().get(i).equals(sublocaciones.get(i));
 		}
-		
 		return res;
 	}
 	
 	public void armar_ciudad_con_valores(){
-		Esquina e1= new Esquina(1,1,2,false); e1.setNombre("E1");
-		Esquina e2= new Esquina(1,2,0,false); e2.setNombre("E2");
+		
+		// Cuadrante A1
+		Locacion a1 = new Locacion(191,21,"A1",this);		
+		// Subcuadrante A1M1
+		Locacion a1m1 = new Locacion(191,21,"A1M1",a1);
+		Esquina a1m1b1 = new Esquina(148,10,"A1M1B1",a1m1);
+		Esquina a1m1b2 = new Esquina(191,21,"A1M1B2",a1m1);		
+		Esquina a1m1b5 = new Esquina(180,72,"A1M1B5",a1m1);
+		Esquina a1m1b7 = new Esquina(134,60,"A1M1B7",a1m1);
+		a1m1b1.addAdyacente(a1m1b2, Locacion.ESTE);a1m1b1.addAdyacente(a1m1b7, Locacion.SUR);
+		a1m1b2.addAdyacente(a1m1b5, Locacion.SUR);a1m1b2.addAdyacente(a1m1b1, Locacion.OESTE);
+		a1m1b5.addAdyacente(a1m1b2, Locacion.NORTE);
+		a1m1b7.addAdyacente(a1m1b1, Locacion.NORTE);
+		a1m1.addSublocacion(a1m1b1);
+		a1m1.addSublocacion(a1m1b2);
+		a1m1.addSublocacion(a1m1b5);
+		a1m1.addSublocacion(a1m1b7);
+		a1.addSublocacion(a1m1);
+		// Subcuadrante A1M3
+		Locacion a1m3 = new Locacion(169,126,"A1M3",a1);
+		Esquina a1m3b4 = new Esquina(169,126,"A1M3B4",a1m3);
+		a1m3.addSublocacion(a1m3b4);
+		a1m1.addAdyacente(a1m3,Locacion.ESTE);
+		a1m3.addAdyacente(a1m1,Locacion.OESTE);
+		this.addSublocacion(a1);
+		
+		a1m1b7.setCriminal(true);
+		a1m1b1.setCantidadPersonas(2);
+		a1m1b2.setCantidadPersonas(1);
+		a1m1b7.setCantidadPersonas(2);
+		a1m3b4.setCantidadPersonas(3);		
+		
+		/*
+		Esquina e1= new Esquina(1,1,0,false); e1.setNombre("E1");
+		Esquina e2= new Esquina(1,2,3,false); e2.setNombre("E2");
 		Esquina e3= new Esquina(2,2,1,true); e3.setNombre("E3");
+		//Esquina e4= new Esquina(1,2,3,false); e3.setNombre("E4");
 		//Esquina e4= new Esquina(4,2,1,false); e4.setNombre("E4");
 		//Esquina e5= new Esquina(3,2,3,false); e5.setNombre("E5");
 		//Esquina e6= new Esquina(4,3,2,false); e6.setNombre("E6");
@@ -205,40 +250,88 @@ public class Locacion {
 		//Nivel esquinas completo
 		Locacion c1 = new Locacion();c1.setNombre("C1");c1.setCentro(1,1);c1.setSenial(90);
 		Locacion sc1= new Locacion();sc1.setNombre("SC1");sc1.setCentro(1,1);sc1.setSenial(60);sc1.setPadre(c1);
+		//Locacion sc2= new Locacion();sc2.setNombre("SC2");sc2.setCentro(1,2);sc2.setSenial(60);sc2.setPadre(c1);
 		//Locacion sc2= new Locacion();sc2.setNombre("SC2");sc2.setCentro(4,2);sc2.setSenial(120);sc2.setPadre(c1);
 		c1.addSublocacion(sc1);//c1.addSublocacion(sc2);
 		//sc1.addAdyacente(sc2,ESTE);sc2.addAdyacente(sc1,OESTE);
 		sc1.addSublocacion(e1);sc1.addSublocacion(e2);sc1.addSublocacion(e3);
-		//sc2.addSublocacion(e4);sc2.addSublocacion(e5);sc2.addSublocacion(e6);
+		//sc2.addSublocacion(e4);//sc2.addSublocacion(e5);sc2.addSublocacion(e6);
 		e1.setPadre(sc1);e2.setPadre(sc1);e3.setPadre(sc1);
-		//e4.setPadre(sc2);e5.setPadre(sc2);e6.setPadre(sc2);
-		this.addSublocacion(c1);
+		//e4.setPadre(sc2);//e5.setPadre(sc2);e6.setPadre(sc2);
+		this.addSublocacion(c1);*/
 	}
 	
 	public void armar_ciudad(){
+		
+		// Cuadrante A1
+		Locacion a1 = new Locacion(191,21,"A1",this);		
+		// Subcuadrante A1M1
+		Locacion a1m1 = new Locacion(191,21,"A1M1",a1);
+		Esquina a1m1b1 = new Esquina(148,10,"A1M1B1",a1m1);
+		Esquina a1m1b2 = new Esquina(191,21,"A1M1B2",a1m1);		
+		Esquina a1m1b5 = new Esquina(180,72,"A1M1B5",a1m1);
+		Esquina a1m1b7 = new Esquina(134,60,"A1M1B7",a1m1);
+		a1m1b1.addAdyacente(a1m1b2, Locacion.ESTE);a1m1b1.addAdyacente(a1m1b7, Locacion.SUR);
+		a1m1b2.addAdyacente(a1m1b5, Locacion.SUR);a1m1b2.addAdyacente(a1m1b1, Locacion.OESTE);
+		a1m1b5.addAdyacente(a1m1b2, Locacion.NORTE);
+		a1m1b7.addAdyacente(a1m1b1, Locacion.NORTE);
+		a1m1.addSublocacion(a1m1b1);
+		a1m1.addSublocacion(a1m1b2);
+		a1m1.addSublocacion(a1m1b5);
+		a1m1.addSublocacion(a1m1b7);
+		a1.addSublocacion(a1m1);
+		// Subcuadrante A1M3
+		Locacion a1m3 = new Locacion(169,126,"A1M3",a1);
+		Esquina a1m3b4 = new Esquina(169,126,"A1M3B4",a1m3);
+		a1m3.addSublocacion(a1m3b4);
+		a1m1.addAdyacente(a1m3,Locacion.ESTE);
+		a1m3.addAdyacente(a1m1,Locacion.OESTE);
+		this.addSublocacion(a1);	
+		/*
 		Esquina e1= new Esquina(1,1); e1.setNombre("E1");
 		Esquina e2= new Esquina(1,2); e2.setNombre("E2");
 		Esquina e3= new Esquina(2,2); e3.setNombre("E3");
-	//	Esquina e4= new Esquina(4,2); e4.setNombre("E4");
-	//	Esquina e5= new Esquina(3,2); e5.setNombre("E5");
-	//	Esquina e6= new Esquina(4,3); e6.setNombre("E6");
+		//Esquina e4= new Esquina(4,2,1,false); e4.setNombre("E4");
+		//Esquina e5= new Esquina(3,2,3,false); e5.setNombre("E5");
+		//Esquina e6= new Esquina(4,3,2,false); e6.setNombre("E6");
 		e1.addAdyacente(e2,NORTE);e1.addAdyacente(e3,ESTE);
 		e2.addAdyacente(e1,SUR);
 		e3.addAdyacente(e1,OESTE);
-	//	e4.addAdyacente(e5,ESTE);e4.addAdyacente(e6,OESTE);
-	//	e5.addAdyacente(e4,OESTE);
-	//	e6.addAdyacente(e4,ESTE);
-		//nivel esquinas completo
+		//e4.addAdyacente(e5,ESTE);e4.addAdyacente(e6,OESTE);
+		//e5.addAdyacente(e4,OESTE);
+		//e6.addAdyacente(e4,ESTE);
+		//Nivel esquinas completo
 		Locacion c1 = new Locacion();c1.setNombre("C1");c1.setCentro(1,1);
 		Locacion sc1= new Locacion();sc1.setNombre("SC1");sc1.setCentro(1,1);sc1.setPadre(c1);
-	//	Locacion sc2= new Locacion();sc1.setNombre("SC2");sc2.setCentro(4,2);sc2.setPadre(c1);
+		//Locacion sc2= new Locacion();sc2.setNombre("SC2");sc2.setCentro(1,2);sc2.setPadre(c1);
+		//Locacion sc2= new Locacion();sc2.setNombre("SC2");sc2.setCentro(4,2);sc2.setSenial(120);sc2.setPadre(c1);
 		c1.addSublocacion(sc1);//c1.addSublocacion(sc2);
 		//sc1.addAdyacente(sc2,ESTE);sc2.addAdyacente(sc1,OESTE);
 		sc1.addSublocacion(e1);sc1.addSublocacion(e2);sc1.addSublocacion(e3);
-	//	sc2.addSublocacion(e4);sc2.addSublocacion(e5);sc2.addSublocacion(e6);
+		//sc2.addSublocacion(e4);//sc2.addSublocacion(e5);sc2.addSublocacion(e6);
 		e1.setPadre(sc1);e2.setPadre(sc1);e3.setPadre(sc1);
-	//	e4.setPadre(sc2);e5.setPadre(sc2);e6.setPadre(sc2);
+		//e4.setPadre(sc2);//e5.setPadre(sc2);e6.setPadre(sc2);
 		this.addSublocacion(c1);
+		*/
 	}
 	
+	public void vaciar(){
+		valorSenial = 0;
+		for(Locacion l : sublocaciones)
+			l.vaciar();
+	}
+	
+	public void calcularSeniales(){// alto: 10*X, medio: 20*X, bajo: X
+		for(int i=0;i<sublocaciones.size();i++){//cada cuadrante
+			int personas = 0;
+			for(int j=0;j<getSublocaciones().get(i).getSublocaciones().size();j++){//cada subcuadrante
+				int personasSC = 0;
+				for(int k=0;k<sublocaciones.get(i).getSublocaciones().get(j).getSublocaciones().size();k++)//suma la cantidad de personas en las esquinas
+					personasSC +=sublocaciones.get(i).getSublocaciones().get(j).getSublocaciones().get(k).getSenial();
+				sublocaciones.get(i).getSublocaciones().get(j).setSenial(20*personasSC);
+				personas+=personasSC;
+			}
+			sublocaciones.get(i).setSenial(10*personas);
+		}
+	}
 }

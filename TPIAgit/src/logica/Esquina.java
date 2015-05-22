@@ -28,6 +28,15 @@ public class Esquina extends Locacion{
 		nombre = name;
 	}
 	
+	public Esquina(int x,int y,String name,Locacion padre){
+		super();
+		centro = new Point(x,y);
+		hayCriminal = false;
+		visitada = false;
+		nombre = name;
+		this.padre=padre;
+	}
+	
 	public Esquina(int x,int y,int cantPs,boolean criminal){
 		super();
 		centro = new Point(x,y);
@@ -91,10 +100,9 @@ public class Esquina extends Locacion{
 		return cant;
 	}
 	
-	public void actualizarEsquina(int x,int y,Integer cantPersonas,Boolean hayMalechor){
+	public void actualizarEsquina(double x,double y,int cantPersonas){
 		if(getX() == x && getY() == y){
 			this.setCantidadPersonas(cantPersonas);
-			this.setCriminal(hayMalechor);
 		}
 	}
 	
@@ -125,6 +133,12 @@ public class Esquina extends Locacion{
 		}
 		else
 			return false;
+	}
+	
+	public void vaciar(){
+		super.vaciar();
+		hayCriminal = false;
+		visitada = false;
 	}
 	
 }

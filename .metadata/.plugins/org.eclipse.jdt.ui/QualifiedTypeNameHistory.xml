@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="logica.Esquina"/>
-<fullyQualifiedTypeName name="logica.Locacion"/>
 <fullyQualifiedTypeName name="frsf.cidisi.exercise.drone.search.DroneAgentMain"/>
 <fullyQualifiedTypeName name="frsf.cidisi.exercise.drone.search.DroneAgent"/>
+<fullyQualifiedTypeName name="logica.HiloSimulador"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="logica.Locacion"/>
 <fullyQualifiedTypeName name="interfaz.VentanaPrincipal"/>
 </qualifiedTypeNameHistroy>

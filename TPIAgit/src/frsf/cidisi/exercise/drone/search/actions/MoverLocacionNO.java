@@ -19,7 +19,9 @@ public class MoverLocacionNO extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         DroneAgentState agState = (DroneAgentState) s;
         
-        if(agState.getlocacion().getAdyacente(Locacion.NOROESTE) != null && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE){
+        if(agState.getlocacion().getAdyacente(Locacion.NOROESTE) != null
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE
+        		&& (agState.getlocacion().calcularAltura()!=3 && !agState.getlocacion().getAdyacente(Locacion.NOROESTE).getVisitada())){
         	agState.setlocacion(agState.getlocacion().getAdyacente(Locacion.NOROESTE));
         	int costo = COSTO_MOVERSE;
         	if(agState.getlocacion().getSenial()==0)
@@ -39,7 +41,9 @@ public class MoverLocacionNO extends SearchAction {
         DroneEnvironmentState environmentState = (DroneEnvironmentState) est;
         DroneAgentState agState = ((DroneAgentState) ast);
 
-        if(agState.getlocacion().getAdyacente(Locacion.NOROESTE) != null && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE){
+        if(agState.getlocacion().getAdyacente(Locacion.NOROESTE) != null 
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE
+        		&& (agState.getlocacion().calcularAltura()!=3 && !agState.getlocacion().getAdyacente(Locacion.NOROESTE).getVisitada())){
         	agState.setlocacion(agState.getlocacion().getAdyacente(Locacion.NOROESTE));
         	int costo = COSTO_MOVERSE;
         	if(agState.getlocacion().getSenial()==0)

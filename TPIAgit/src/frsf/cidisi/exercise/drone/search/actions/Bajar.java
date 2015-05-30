@@ -18,7 +18,9 @@ public class Bajar extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         DroneAgentState agState = (DroneAgentState) s;
         
-        if(agState.getlocacion().calcularAltura() != 3 && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_BAJAR){
+        if(agState.getlocacion().calcularAltura() != 3
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_BAJAR
+        		&& !agState.getlocacion().getVisitada()){
         	agState.setlocacion(agState.getlocacion().getLocacionBajada());
         	agState.setenergiaGastada(agState.getenergiaGastada()+COSTO_BAJAR);
         	return agState;
@@ -35,7 +37,9 @@ public class Bajar extends SearchAction {
         DroneEnvironmentState environmentState = (DroneEnvironmentState) est;
         DroneAgentState agState = ((DroneAgentState) ast);
         
-        if (agState.getlocacion().calcularAltura() != 3 && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_BAJAR) {
+        if (agState.getlocacion().calcularAltura() != 3 
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_BAJAR
+        		&& !agState.getlocacion().getVisitada()) {
             // Update the real world
         	environmentState.setlocacionDrone(environmentState.getlocacionDrone().getLocacionBajada());
         	environmentState.setEnergiaGastada(environmentState.getEnergiaGastada()+COSTO_BAJAR);

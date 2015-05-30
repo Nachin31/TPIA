@@ -18,7 +18,9 @@ public class Subir extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         DroneAgentState agState = (DroneAgentState) s;
 
-        if(agState.getlocacion().calcularAltura() != 1 && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_SUBIR){
+        if(agState.getlocacion().calcularAltura() != 1 
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_SUBIR
+        		&& agState.getlocacion().getPadre().getVisitada()){
         	agState.setlocacion(agState.getlocacion().getPadre());
         	agState.setenergiaGastada(agState.getenergiaGastada()+COSTO_SUBIR);
         	return agState;
@@ -36,7 +38,9 @@ public class Subir extends SearchAction {
         DroneEnvironmentState environmentState = (DroneEnvironmentState) est;
         DroneAgentState agState = ((DroneAgentState) ast);
 
-        if (agState.getlocacion().calcularAltura() != 1 && (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_SUBIR) {
+        if (agState.getlocacion().calcularAltura() != 1 
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_SUBIR
+        		&& agState.getlocacion().getPadre().getVisitada()) {
             // Update the real world
         	environmentState.setlocacionDrone(environmentState.getlocacionDrone().getPadre());
         	environmentState.setEnergiaGastada(environmentState.getEnergiaGastada()+COSTO_SUBIR);

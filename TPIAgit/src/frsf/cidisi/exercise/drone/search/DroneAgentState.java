@@ -113,7 +113,7 @@ public class DroneAgentState extends SearchBasedAgentState {
     public void initState() {
         
     //TODO: Complete Method , ciudad va a tener q tomarse de la interfaz
-    	 ciudad.armar_ciudad();
+    	 ciudad = VentanaPrincipal.getCiudadVacia();
 		 energiaInicial = 1000 ;
 		 locacion = ciudad.getSublocaciones().get(0);
     }

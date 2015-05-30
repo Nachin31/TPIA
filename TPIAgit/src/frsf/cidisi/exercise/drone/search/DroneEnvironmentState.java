@@ -28,7 +28,7 @@ public class DroneEnvironmentState extends EnvironmentState {
     @Override
     public void initState() {
     	energia = 1000;
-        ciudad.armar_ciudad_con_valores();
+    	ciudad = VentanaPrincipal.getCiudad();
         locacionDrone = ciudad.getSublocaciones().get(0);
         
     }

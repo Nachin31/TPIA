@@ -27,7 +27,7 @@ public class DroneEnvironmentState extends EnvironmentState {
      */
     @Override
     public void initState() {
-    	energia = 1000;
+    	energia = 10000;
     	ciudad = VentanaPrincipal.getCiudad();
         locacionDrone = ciudad.getSublocaciones().get(0);
         
@@ -39,6 +39,7 @@ public class DroneEnvironmentState extends EnvironmentState {
     @Override
     public String toString() {
         String str = "";
+        str = str + "Estado del Ambiente:\n";
         str = str + "Posicion Drone: " + locacionDrone.getNombre() + "\n";
         
         for(int i=0;i< ciudad.getSublocaciones().size();i++){ //cuadrantes
@@ -49,7 +50,9 @@ public class DroneEnvironmentState extends EnvironmentState {
         			str = str + "    Intesidad en " + ((ciudad.getSublocaciones().get(i).getSublocaciones()).get(j)).getSublocaciones().get(k).getNombre() + ": " + ((ciudad.getSublocaciones().get(i).getSublocaciones()).get(j)).getSublocaciones().get(k).getSenial() + "\n";
         		}
         	}
-        }        
+        }
+        
+        //VentanaPrincipal.writeConsole(str);
         
         return str;
     }

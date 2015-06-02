@@ -12,6 +12,7 @@ public class Locacion {
 	protected Point centro;
 	protected int valorSenial;
 	protected String nombre;
+	protected int cantPasadas;
 	public final static int NORTE = 0;
 	public final static int NORESTE = 1;
 	public final static int ESTE = 2;
@@ -26,6 +27,7 @@ public class Locacion {
 		adyacentes = new Locacion[8];
 		centro = new Point();
 		valorSenial = 0;
+		cantPasadas = 0;
 		nombre = "";
 	}
 	
@@ -35,6 +37,7 @@ public class Locacion {
 		centro = new Point();
 		valorSenial = 0;
 		nombre = nomb;
+		cantPasadas = 0;
 	}
 	
 	public Locacion(int x, int y, String nomb, Locacion padre){
@@ -44,6 +47,7 @@ public class Locacion {
 		setCentro(x,y);
 		valorSenial = 0;
 		nombre = nomb;
+		cantPasadas = 0;
 		centro.setLocation(x,y);
 		this.padre = padre;
 	}
@@ -94,6 +98,15 @@ public class Locacion {
 	public void setVisitada(boolean val){
 		for(Locacion l : getSublocaciones())
 			l.setVisitada(val);
+	}
+	
+	public void increasePasadas(){
+		//Solo incrementara en las esquinas
+		cantPasadas++;
+	}
+	
+	public int getPasadas(){
+		return cantPasadas;
 	}
 	
 	public int calcularAltura(){

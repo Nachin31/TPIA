@@ -3,6 +3,9 @@ package interfaz;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
 import javax.swing.SwingUtilities;
 
 import java.awt.Color;
@@ -17,11 +20,13 @@ import javax.swing.border.TitledBorder;
 import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 import javax.swing.border.LineBorder;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
 
 import excepciones.CoordenadasSinEsquinaException;
 import frsf.cidisi.exercise.drone.search.DroneAgent;
 
-import java.awt.TextArea;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
@@ -48,7 +53,9 @@ public class VentanaPrincipal extends JFrame {
 	private static ProgressBar progressBar;
 	private static Locacion ciudad;
 	private static Locacion ciudadVacia;
-	static PanelMapa panel_4;
+	private static PanelMapa panel_4;
+	private static JTextPane textArea;
+	private static int indexText = 0;
 	
 	//TODO usar variable "insimulation" que deshabilite el botón hasta que termina.
 	
@@ -199,7 +206,7 @@ public class VentanaPrincipal extends JFrame {
 		//Aqui comienza la progress bar
 		//Tendria que tener el valor de "energia total" y "energia gastada"
 		energiaGastada = 0;
-		energiaTotal = 1000;
+		energiaTotal = 10000;
 		progressBar = new ProgressBar(energiaTotal,energiaTotal,"Porcentaje");
 		progressBar.setBackground(Color.black);
 		progressBar.setBounds(171, 0, 539, 29);
@@ -224,10 +231,13 @@ public class VentanaPrincipal extends JFrame {
 		lblNewLabel.setBounds(102, 3, 60, 23);
 		jPanelConsola.add(lblNewLabel);
 		
-		TextArea textArea = new TextArea();
-		textArea.setBounds(10, 40, 700, 178);
+		JScrollPane scrollPane = new JScrollPane();
+		textArea = new JTextPane();
+		scrollPane.setBounds(10, 40, 700, 178);
+		scrollPane.setViewportView(textArea);
+		//textArea.setBounds(10, 40, 700, 178);
 		textArea.setEditable(false);
-		jPanelConsola.add(textArea);
+		jPanelConsola.add(scrollPane);
 		
 		setResizable(false);
 		setVisible(true);
@@ -241,6 +251,31 @@ public class VentanaPrincipal extends JFrame {
 	
 	public static void updateEsquina(double d,double e,int senial){
 		ciudadVacia.actualizarEsquina(d,e,senial);
+	}
+	
+	public static void writeConsole(String elemento){
+		String[] lines = elemento.split("\n");
+    
+        SimpleAttributeSet blue = new SimpleAttributeSet();
+        StyleConstants.setFontFamily(blue, "Calibri");
+        StyleConstants.setFontSize(blue, 15);
+        StyleConstants.setBold(blue, true);
+        StyleConstants.setForeground(blue, Color.BLUE);
+        
+        SimpleAttributeSet black = new SimpleAttributeSet();
+        StyleConstants.setFontFamily(black, "Calibri");
+        StyleConstants.setFontSize(black, 13);
+        StyleConstants.setBold(black, false);
+        StyleConstants.setForeground(black, Color.BLACK);
+        
+		try {
+			textArea.getDocument().insertString(textArea.getDocument().getLength(),lines[0]+"\n",blue);	
+	        for(int i=1;i<lines.length;i++)
+	        	textArea.getDocument().insertString(textArea.getDocument().getLength(),lines[i]+"\n",black);
+		} catch (BadLocationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public static void updateLocacionDrone(Locacion locacion){

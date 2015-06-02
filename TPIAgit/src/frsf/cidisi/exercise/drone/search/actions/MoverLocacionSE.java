@@ -19,13 +19,15 @@ public class MoverLocacionSE extends SearchAction {
         DroneAgentState agState = (DroneAgentState) s;
         
         if(agState.getlocacion().getAdyacente(Locacion.SURESTE) != null 
-        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE
-        		&& (agState.getlocacion().calcularAltura()!=3 && !agState.getlocacion().getAdyacente(Locacion.SURESTE).getVisitada())){
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE){
         	agState.setlocacion(agState.getlocacion().getAdyacente(Locacion.SURESTE));
         	int costo = COSTO_MOVERSE;
         	if(agState.getlocacion().getSenial()==0)
         		costo += 50;
         	agState.setenergiaGastada(agState.getenergiaGastada()+costo);
+        	agState.getlocacion().increasePasadas();
+        	if(agState.getlocacion().getSenial() == 0)
+        		agState.getlocacion().setVisitada(true);
         	return agState;
         }
         
@@ -41,13 +43,13 @@ public class MoverLocacionSE extends SearchAction {
         DroneAgentState agState = ((DroneAgentState) ast);
 
         if(agState.getlocacion().getAdyacente(Locacion.SURESTE) != null 
-        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE
-        		&& (agState.getlocacion().calcularAltura()!=3 && !agState.getlocacion().getAdyacente(Locacion.SURESTE).getVisitada())){
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE){
         	agState.setlocacion(agState.getlocacion().getAdyacente(Locacion.SURESTE));
         	int costo = COSTO_MOVERSE;
         	if(agState.getlocacion().getSenial()==0)
         		costo += 50;
         	agState.setenergiaGastada(agState.getenergiaGastada()+costo);
+        	agState.getlocacion().increasePasadas();
         	
         	environmentState.setlocacionDrone(environmentState.getlocacionDrone().getAdyacente(Locacion.SURESTE));
         	environmentState.setEnergiaGastada(environmentState.getEnergiaGastada()+costo);

@@ -20,7 +20,7 @@ public class Bajar extends SearchAction {
         
         if(agState.getlocacion().calcularAltura() != 3
         		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_BAJAR
-        		&& !agState.getlocacion().getVisitada()){
+        		&& (!agState.getlocacion().getVisitada() && agState.getlocacion().getSenial() > 0)){
         	agState.setlocacion(agState.getlocacion().getLocacionBajada());
         	agState.setenergiaGastada(agState.getenergiaGastada()+COSTO_BAJAR);
         	return agState;
@@ -39,7 +39,7 @@ public class Bajar extends SearchAction {
         
         if (agState.getlocacion().calcularAltura() != 3 
         		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_BAJAR
-        		&& !agState.getlocacion().getVisitada()) {
+        		&& !agState.getlocacion().getVisitada() && agState.getlocacion().getSenial() > 0) {
             // Update the real world
         	environmentState.setlocacionDrone(environmentState.getlocacionDrone().getLocacionBajada());
         	environmentState.setEnergiaGastada(environmentState.getEnergiaGastada()+COSTO_BAJAR);

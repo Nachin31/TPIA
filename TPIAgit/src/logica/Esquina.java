@@ -53,6 +53,14 @@ public class Esquina extends Locacion{
 		return visitada;
 	}
 	
+	public void increasePasadas(){
+		cantPasadas++;
+	}
+	
+	public int getPasadas(){
+		return cantPasadas;
+	}
+	
 	public int getCantidadPersonas(){
 		return valorSenial;
 	}

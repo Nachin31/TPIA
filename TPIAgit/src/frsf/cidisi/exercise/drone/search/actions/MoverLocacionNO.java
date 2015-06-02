@@ -20,13 +20,15 @@ public class MoverLocacionNO extends SearchAction {
         DroneAgentState agState = (DroneAgentState) s;
         
         if(agState.getlocacion().getAdyacente(Locacion.NOROESTE) != null
-        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE
-        		&& (agState.getlocacion().calcularAltura()!=3 && !agState.getlocacion().getAdyacente(Locacion.NOROESTE).getVisitada())){
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE){
         	agState.setlocacion(agState.getlocacion().getAdyacente(Locacion.NOROESTE));
         	int costo = COSTO_MOVERSE;
         	if(agState.getlocacion().getSenial()==0)
         		costo += 50;
         	agState.setenergiaGastada(agState.getenergiaGastada()+costo);
+        	agState.getlocacion().increasePasadas();
+        	if(agState.getlocacion().getSenial() == 0)
+        		agState.getlocacion().setVisitada(true);
         	return agState;
         }
         
@@ -42,13 +44,13 @@ public class MoverLocacionNO extends SearchAction {
         DroneAgentState agState = ((DroneAgentState) ast);
 
         if(agState.getlocacion().getAdyacente(Locacion.NOROESTE) != null 
-        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE
-        		&& (agState.getlocacion().calcularAltura()!=3 && !agState.getlocacion().getAdyacente(Locacion.NOROESTE).getVisitada())){
+        		&& (agState.getenergiaInicial() - agState.getenergiaGastada()) >= COSTO_MOVERSE){
         	agState.setlocacion(agState.getlocacion().getAdyacente(Locacion.NOROESTE));
         	int costo = COSTO_MOVERSE;
         	if(agState.getlocacion().getSenial()==0)
         		costo += 50;
         	agState.setenergiaGastada(agState.getenergiaGastada()+costo);
+        	agState.getlocacion().increasePasadas();
         	
         	environmentState.setlocacionDrone(environmentState.getlocacionDrone().getAdyacente(Locacion.NOROESTE));
         	environmentState.setEnergiaGastada(environmentState.getEnergiaGastada()+costo);

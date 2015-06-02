@@ -1,5 +1,7 @@
 package frsf.cidisi.exercise.drone.search;
 
+import interfaz.VentanaPrincipal;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,7 +71,7 @@ public class DroneAgentPerception extends Perception {
     public String toString() {      
         String str = "";
         
-        str = str + "\nPercepciones del Drone: \n-- Posicion (gps):";
+        str = str + "Percepciones del Drone: \n-- Posicion (gps):";
         
     	str = str + "\nX: " + gps.getX();
     	str = str + "\nY: " + gps.getY();
@@ -92,6 +94,8 @@ public class DroneAgentPerception extends Perception {
         	str = str + "\nNOROESTE: " + camara[7];
         	str = str + "\nESQUINA ACTUAL: " + camara[8] + "\n";
         }
+        
+        VentanaPrincipal.writeConsole(str);
         
         return str;
     }

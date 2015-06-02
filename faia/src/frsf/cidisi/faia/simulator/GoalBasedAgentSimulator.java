@@ -47,7 +47,7 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
 
     @Override
     public void start() {
-
+    	
         System.out.println("----------------------------------------------------");
         System.out.println("--- " + this.getSimulatorName() + " ---");
         System.out.println("----------------------------------------------------");
